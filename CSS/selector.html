@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1,#link,
+    .formatting {
+        color: rgb(0, 229, 255);
+        font-family: cursive
+
+    }
+    #heading {
+        font-size: 24px;
+        font-family: sans-serif;
+    }
+    li {
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+    p,h2,
+    ul,li{
+        background-color: rgb(233, 233, 106);
+        color: rgb(0, 255, 0);
+        font-family: monospace;
+    }
+
+    a {
+        color: rgb(255, 0, 0);
+        font-family: monospace;
+        font-size: 18px;
+    }
+    a:hover {
+        color: rgb(255, 0, 221);
+        font-family:sans-serif;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    selection > p{
+        color: rgb(112, 92, 141);
+        font-family: monospace;
+    }
+
+    input[name]{
+        color: rgb(65, 6, 225);
+    }
+    input[type="text"]{
+        background-color: rgb(225, 85, 244);
+    }
+    input[type="password"]{
+        background-color: rgb(255, 0, 0);
+    }
+
+    h2[class=""]{
+        color: rgb(255, 162, 0);
+    }
+
+</style>
+<body>
+    <h2 class="">Heading Level</h2>
+    <h1 id="heading">Types of CSS</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Consequatur amet facere aperiam cumque
+    </h2>
+    <ul>
+        <li class="formatting">Inline CSS</li>
+        <li class="formatting">Internal CSS</li>
+        <li class="formatting">External CSS</li>
+    </ul>
+    <a href="https://www.w3schools.com/css/css_howto.asp" target="_blank">Click here to learn more about CSS</a>
+
+    <section>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Consequatur amet facere aperiam cumque
+            </p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Consequatur amet facere aperiam cumque
+            </p>
+    </section>
+
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"> <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"> <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
