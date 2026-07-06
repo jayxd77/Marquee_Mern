@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend><b>TABLE</b></legend>
+        <table border="1">
+          <colgroup>
+            <col style="background-color: rgb(129, 129, 191)" />
+            <col style="background-color: rgb(223, 135, 223)" />
+            <col style="background-color: lightblue" />
+            <col style="background-color: lightgreen" />
+          </colgroup>
+          <style>
+            td,
+            th {
+              border: 1px solid;
+              padding: 5px;
+            }
+            table {
+              border-collapse: collapse;
+            }
+            th {
+              background-color: rgb(142, 142, 148);
+            }
+          </style>
+          <tr>
+            <th><b>Emp Code</b></th>
+            <th><b>Emp Name</b></th>
+            <th><b>Job Title</b></th>
+            <th><b>Salary(LPA)</b></th>
+          </tr>
+          <tr>
+            <td>912</td>
+            <td>Zoya Shaikh</td>
+            <td>Developer</td>
+            <td>3.6</td>
+          </tr>
+          <tr>
+            <td>913</td>
+            <td>Lisa Dev</td>
+            <td>Tester</td>
+            <td rowspan="2">2.8</td>
+          </tr>
+          <tr>
+            <td>914</td>
+            <td>Deepak</td>
+            <td>Developer</td>
+            <!-- <td>5.2</td> -->
+          </tr>
+          <tr>
+            <td>915</td>
+            <td>Simran Rao</td>
+            <td>digital Marketing</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>916</td>
+            <td>Zoya Shaikh</td>
+            <td>HR</td>
+            <td>5.6</td>
+          </tr>
+          <tfoot>
+            <tr>
+              <td colspan="4" align="center">This is table footer</td>
+            </tr>
+          </tfoot>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+<html>
+  <body>
+    <h2>Sports Physical Form</h2>
+    <form action="action.html" method="get">
+      <fieldset>
+        <legend>Athlete Information</legend>
+        <ul>
+          <li>
+            <label for="Name">Name:</label>
+            <input type="text" name="username" id="Name" /> (max:20)
+          </li>
+          <li>
+            <label for="School">School:</label>
+            <input type="text" name="schoolname" id="School" />
+          </li>
+          <li>
+            <label for="Mob.no">Mobile:</label>
+            <input type="text" name="mobile" id="Mob.no" />
+          </li>
+          <li>
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" />
+          </li>
+          <li>
+            <label for="Sport">Sport:</label>
+            <input type="text" name="sport" id="Sport" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Medical history of athlete</legend>
+        <ul>
+          <li>
+            <label for="">History of concussion:</label>
+            <label for="history_concussion_yes"></label>
+            <label for="hocy">yes</label>
+            <input
+              type="radio"
+              name="history_concussion"
+              value="history_concussion_yes"
+              id="hocy"
+            />
+            <label for="history_concussion_no"></label>
+            <label for="hocn">no</label>
+            <input
+              type="radio"
+              name="history_concussion"
+              value="history_concussion_yes"
+              id="hocn"
+            />
+          </li>
+          <li>
+            <label for="surgeries">Surgeries:</label>
+            <input type="text" id="surgeries" name="prev_surgeries" />
+          </li>
+          <li>
+            <label for="">Any Bone fracture:</label>
+            <label for="any_fractures_yes"></label>
+            <label for="abfy">yes</label>
+            <input
+              type="radio"
+              name="history_bones"
+              value="any_fractures_yes"
+              id="abfy"
+            />
+            <label for="any_fractures_no"></label>
+            <label for="abfn">no</label>
+            <input
+              type="radio"
+              name="history_bones"
+              value="any_fractures_no"
+              id="abfn"
+            />
+          </li>
+          <li>
+            <label for="">Asthama or breathing problem:</label>
+            <label for="any_breathing_prob_yes"></label>
+            <label for="bpy">yes</label>
+            <input
+              type="radio"
+              name="breathing_problem"
+              value="any_breathing_prob_yes"
+              id="bpy"
+            />
+            <label for="any_breathing_prob_no"></label>
+            <label for="bpn">no</label>
+            <input
+              type="radio"
+              name="breathing_problem"
+              value="any_breathing_prob_no"
+              id="bpn"
+            />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Fitness Assessment</legend>
+        <table border="1">
+          <tr>
+            <th>Category</th>
+            <th>Pass</th>
+            <th>Fail</th>
+            <th>Comments</th>
+          </tr>
+          <tr>
+            <td><b>Cardenelity</b></td>
+            <td>
+              <label for="Cardenelity"></label>
+              <input
+                type="radio"
+                value="pass"
+                name="Cardenelity"
+                id="Cardenelity"
+              />
+            </td>
+            <td>
+              <label for="Cardenelity"></label>
+              <input
+                type="radio"
+                id="Cardenelity"
+                name="Cardenelity"
+                value="pass"
+              />
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><b>strength</b></td>
+            <td>
+              <label for="strength"></label>
+              <input type="radio" name="strength" value="pass" id="strength" />
+            </td>
+            <label for="strength"></label>
+            <td>
+              <input type="radio" name="strength" value="pass" id="strength" />
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><b>flexibility</b></td>
+            <td>
+              <label for="flexibility"></label>
+              <input
+                type="radio"
+                value="pass"
+                name="flexibility"
+                id="flexibility"
+              />
+            </td>
+            <td>
+              <label for="flexibility"></label>
+              <input
+                type="radio"
+                id="flexibility"
+                name="flexibility"
+                value="pass"
+              />
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Department selection</legend>
+        <select name="select department" id="SD">
+          <option value="null">select department</option>
+          <option value="AIML" id="SD">AIML</option>
+          <option value="AIDS" id="SD">AIDS</option>
+          <option value="CSE" id="SD">CSE</option>
+          <option value="CYBER" id="SD">CYBER</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Select your Hobby</legend>
+        <input type="checkbox" name="sing" id="singing" value="sing_yes" />
+        <label for="singing">singing</label>
+        <input type="checkbox" name="draw" id="drawing" value="draw_yes" />
+        <label for="drawing">Drawing</label>
+        <input type="checkbox" name="swim" id="swimming" value="swim_yes" />
+        <label for="Swimming">Swimming</label>
+      </fieldset>
+      <fieldset>
+        <legend>importants</legend>
+        <label for="Email">Email</label>
+        <input type="email" name="email" value="" id="Email" /> <br />
+        <label for="Pass">Password</label>
+        <input type="password" name="pass" id="Pass" /> <br />
+        <label for="num">Number</label>
+        <input type="number" name="number" id="num" /> <br />
+        <label for="Date">Date</label>
+        <input type="date" id="Date" name="date" /> <br />
+        <label for="time">Time</label>
+        <input type="time" name="time" id="time" /> <br />
+        <label for="d/t">Date and Time</label>
+        <input type="datetime" id="d/t" name="Date_Time" /> <br />
+      </fieldset>
+      <fieldset>
+        <legend>File slection</legend>
+        <label for="profile">profile</label>
+        <input type="file" name="profile" id="profile" accept=".jpg,.png" />
+        <br />
+        <label for="Resume">Resume</label>
+        <input type="file" name="Resume" id="Resume" accept=".pdf" /> <br />
+        <label for="Word">Word file</label>
+        <input type="file" name="Word" id="Word" accept=".docx" /> <br />
+        <label for="Exel">Exel file</label>
+        <input type="file" name="Exel" id="Exel" accept=".excel" />
+      </fieldset>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
