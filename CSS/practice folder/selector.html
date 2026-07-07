@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Types of CSS</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 40px 20px;
+
+            font-family: "Roboto", sans-serif;
+            color: #222;
+
+            background:
+                /* linear-gradient(
+                    rgba(255, 255, 255, 0.85),
+                    rgba(255, 255, 255, 0.85)
+                ), */
+                url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw5fsX37h8G6RIcOcScQlp07yJGf5Sj9wqgMohHwH-eA&s");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 35px;
+
+            background: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Headings */
+        .sub-heading {
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        #heading {
+            color: #0097a7;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #444;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* CSS Types List */
+        ul {
+            list-style-position: inside;
+            margin-bottom: 25px;
+        }
+
+        .formatting {
+            color: #00838f;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 8px 0;
+        }
+
+        /* Link Button */
+        .learn-more {
+            display: inline-block;
+            margin: 10px 0 30px;
+            padding: 14px 28px;
+
+            color: #222;
+            font-size: 17px;
+            font-weight: 500;
+            text-decoration: none;
+
+            background: rgba(255, 255, 255, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 50px;
+
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            box-shadow: 0 8px 25px rgba(31, 38, 135, 0.2);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background 0.3s ease;
+        }
+
+        .learn-more:hover {
+            color: #c2185b;
+            background: rgba(255, 255, 255, 0.6);
+
+            transform: translateY(-4px);
+            box-shadow: 0 14px 35px rgba(31, 38, 135, 0.3);
+        }
+
+        /* Content Section */
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+
+            background: rgba(255, 255, 255, 0.45);
+            border-radius: 12px;
+        }
+
+        section p {
+            color: #444;
+            font-family: monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Form */
+        form {
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            color: #222;
+
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid transparent;
+            border-radius: 8px;
+            outline: none;
+
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #00acc1;
+        }
+
+        input[type="submit"] {
+            padding: 12px 28px;
+
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+
+            background: #0097a7;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+
+            transition:
+                background 0.3s ease,
+                transform 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: #00796b;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 12px;
+            }
+
+            .container {
+                padding: 25px 20px;
+            }
+
+            #heading {
+                font-size: 28px;
+            }
+
+            .learn-more {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h2 class="sub-heading">Heading Level</h2>
+
+        <h1 id="heading">Types of CSS</h1>
+
+        <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur amet facere aperiam cumque.
+        </p>
+
+        <ul>
+            <li class="formatting">Inline CSS</li>
+            <li class="formatting">Internal CSS</li>
+            <li class="formatting">External CSS</li>
+        </ul>
+
+        <a
+            class="learn-more"
+            href="https://www.w3schools.com/css/css_howto.asp"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Click here to learn more about CSS
+        </a>
+
+        <section>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur amet facere aperiam cumque.
+                </p>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur amet facere aperiam cumque.
+            </p>
+        </section>
+
+        <form action="#">
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                >
+            </div>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </main>
+
+</body>
+</html>
