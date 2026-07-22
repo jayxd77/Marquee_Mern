@@ -14,10 +14,10 @@ body {
 .container {
   display: grid;
   gap: 1rem; 
-  grid-template-columns:repeat(4,1fr);
+   grid-template-columns:repeat(4,1fr);
   grid-template-rows: repeat(3,1fr);
-  column-gap: 20px;
-  padding: 30px;
+  column-gap: 2 0px;
+  padding: 20px;
   border: 1px solid black;
   height: 100%;
   
@@ -26,6 +26,9 @@ body {
 
 .cell {
   background-color:aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* width: 200px;
   height: 100px; */
 }

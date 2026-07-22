@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>chess board</title>
+
+<style>
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:black;
+}
+
+.chess{
+    width:720px;
+    height:720px;
+    display:grid;
+    grid-template-columns:repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    border:10px solid #7b4f25;
+    border-radius:15px;
+    overflow:hidden;
+
+    box-shadow:0 0 25px rgba(255,255,255,.2),0 25px 40px rgba(0,0,0,.5);
+    transition:.5s;
+}
+
+.chess:hover{
+
+    box-shadow:0 0 40px gold,0 30px 60px rgba(0,0,0,.6);
+}
+
+.square{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.white{
+    background:#f0d9b5;
+}
+
+.black{
+    background:#b58863;
+}
+
+.square:hover{
+    background:#6cff6c;
+    box-shadow:inset 0 0 20px rgba(255,255,255,.5);
+}
+
+.piece{
+    transition:.3s;
+}
+
+.square:hover .piece{
+    transform:scale(1.2);
+}
+</style>
+
+</head>
+<body>
+
+<div class="chess">
+
+<div class="square black"><span class="piece">♜</span></div>
+<div class="square white"><span class="piece">♞</span></div>
+<div class="square black"><span class="piece">♝</span></div>
+<div class="square white"><span class="piece">♛</span></div>
+<div class="square black"><span class="piece">♚</span></div>
+<div class="square white"><span class="piece">♝</span></div>
+<div class="square black"><span class="piece">♞</span></div>
+<div class="square white"><span class="piece">♜</span></div>
+
+<div class="square white"><span class="piece">♟</span></div>
+<div class="square black"><span class="piece">♟</span></div>
+<div class="square white"><span class="piece">♟</span></div>
+<div class="square black"><span class="piece">♟</span></div>
+<div class="square white"><span class="piece">♟</span></div>
+<div class="square black"><span class="piece">♟</span></div>
+<div class="square white"><span class="piece">♟</span></div>
+<div class="square black"><span class="piece">♟</span></div>
+
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+<div class="square white"></div>
+<div class="square black"></div>
+
+<div class="square black"><span class="piece">♙</span></div>
+<div class="square white"><span class="piece">♙</span></div>
+<div class="square black"><span class="piece">♙</span></div>
+<div class="square white"><span class="piece">♙</span></div>
+<div class="square black"><span class="piece">♙</span></div>
+<div class="square white"><span class="piece">♙</span></div>
+<div class="square black"><span class="piece">♙</span></div>
+<div class="square white"><span class="piece">♙</span></div>
+
+<!-- Row 8 -->
+<div class="square white"><span class="piece">♖</span></div>
+<div class="square black"><span class="piece">♘</span></div>
+<div class="square white"><span class="piece">♗</span></div>
+<div class="square black"><span class="piece">♕</span></div>
+<div class="square white"><span class="piece">♔</span></div>
+<div class="square black"><span class="piece">♗</span></div>
+<div class="square white"><span class="piece">♘</span></div>
+<div class="square black"><span class="piece">♖</span></div>
+
+</div>
+
+</body>
+</html>
