@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <title>Items-Alignment</title>
+
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy, sans-serif;
+}
+
+html,
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(3, 100px);
+  /* border:5px solid black; */
+  /* What is the Difference Btweeen Cells and Items */
+  /* grid-row and grid-col */
+  /* grid-template-areas:; */
+}
+
+/* Different Color to each Items  */
+#item-1 {
+  background-color: rgb(255, 140, 0);
+  grid-column: span 5;
+}
+#item-2 {
+  background-color: rgb(251, 251, 251);
+  grid-column: span 5;
+  grid-row: 2;
+}
+#item-3 {
+  background-color: green;
+  grid-row: 3;
+  grid-column: span 5;
+
+}
+#item-4 {
+  background-color: white;
+  grid-column: 3/4;
+  border-radius: 50%;
+  grid-row: 2;
+}
+
+.items {
+  background-color: antiquewhite;
+  /* border: 4px solid black; */
+}
+
+#item-4 img{
+ 
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+</style>
+
+
+  </head>
+  <body>
+    <div id="container">
+      <div class="items" id="item-1"></div>
+      <div class="items" id="item-2"></div>
+      <div class="items" id="item-3"></div>
+      <div class="items" id="item-4"> <img src="https://png.pngtree.com/png-clipart/20230811/ourmid/pngtree-ashoka-chakram-png-image_9126559.png" alt=""></div>
+    </div>
+  </body>
+</html>
